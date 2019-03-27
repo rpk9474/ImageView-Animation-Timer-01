@@ -10,11 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var alienImageViewer: UIImageView!
+    
+    @IBOutlet weak var countLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
     }
 
-
+    @IBAction func playBtnPressed(_ sender: Any) {
+    }
+    
+    @IBAction func pauseBtnPressed(_ sender: Any) {
+    }
+    
+    
+    @IBAction func stopBtnPressed(_ sender: Any) {
+    }
+    
 }
 
