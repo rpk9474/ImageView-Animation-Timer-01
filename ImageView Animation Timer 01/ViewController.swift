@@ -23,13 +23,18 @@ class ViewController: UIViewController {
     }
 
     @IBAction func playBtnPressed(_ sender: Any) {
+        print("play pressed")
     }
     
     @IBAction func pauseBtnPressed(_ sender: Any) {
+        print("pause pressed")
+        
     }
     
     
     @IBAction func stopBtnPressed(_ sender: Any) {
+        print("stop pressed")
+        
     }
     
 }
