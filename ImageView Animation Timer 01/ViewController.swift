@@ -27,9 +27,22 @@ class ViewController: UIViewController {
     
     
     @IBAction func playBtnPressed(_ sender: Any) {
-        print("play pressed")
+//        print("play pressed")
+//
+//        myTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(doAnimation), userInfo: nil, repeats: true)
         
-        myTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(doAnimation), userInfo: nil, repeats: true)
+        myTimer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: {(timer:Timer) -> Void in
+            
+            if(self.count==5){
+                self.count=1;
+            }else{
+                self.count+=1;
+            }
+            self.alienImageViewer.image=UIImage(named:"frame\(self.count)");
+            self.countLabel.text = String(self.count)
+            
+        })
+        
     }
     
     @IBAction func pauseBtnPressed(_ sender: Any) {
